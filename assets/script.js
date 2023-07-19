@@ -126,7 +126,56 @@ techBtn.addEventListener('click', function () {
 
 
 // Jasmin's Variables and Functions
+//BUTTONS
+let NycBtn = document.querySelector('#NYC')
 
+//NY
+let Name = document.querySelector('#name');
+let temp = document.querySelector('#temp');
+let foreCast = document.querySelector('#Forecast');
+
+let Name2 = document.querySelector('#name2');
+let temp2 = document.querySelector('#temp2');
+let foreCast2 = document.querySelector('#Forecast2');
+
+let Name3 = document.querySelector('#name3');
+let temp3 = document.querySelector('#temp3');
+let foreCast3 = document.querySelector('#Forecast3');
+
+let Name4 = document.querySelector('#name4');
+let temp4 = document.querySelector('#temp4');
+let foreCast4 = document.querySelector('#Forecast4');
+
+// Request Forecast for NY
+async function getForecast() {
+    const response = await fetch("https://api.weather.gov/gridpoints/OKX/40,74/forecast?units=us");
+    const data = await response.json();
+    return data;
+}
+
+async function callForecast(){
+    const foreCast = await getForecast();
+    Name.textContent= foreCast.properties.periods[0].name;
+    temp.textContent = foreCast.properties.periods[0].temperature;
+    foreCast.textContent = foreCast.properties.periods[0].detailedForecast;
+
+    Name2.textContent= foreCast.properties.periods[1].name;
+    temp2.textContent = foreCast.properties.periods[1].temperature;
+    foreCast2.textContent = foreCast.properties.periods[1].detailedForecast;
+
+    Name3.textContent= foreCast.properties.periods[3].name;
+    temp3.textContent = foreCast.properties.periods[3].temperature;
+    foreCast3.textContent = foreCast.properties.periods[3].detailedForecast;
+
+    Name4.textContent= foreCast.properties.periods[4].name;
+    temp4.textContent = foreCast.properties.periods[4].temperature;
+    foreCast4.textContent = foreCast.properties.periods[4].detailedForecast;
+
+console.log(foreCast)
+}
+
+//event listeners
+NycBtn.addEventListener('click', callForecast);
 
 // Kyle's Variable and Functions
 const signUp = e =>
