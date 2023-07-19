@@ -1,125 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <title>API World News</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <title>API World News</title>
 </head>
+
 <body>
-  </div>
+  
+<!-- Header Element To Be Added -->
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <button class="navbar-item button is-white is-medium" onclick="scrollToSection('#headlines')">
+      Headlines
+    </button>
+    <button class="navbar-item button is-white is-medium" onclick="scrollToSection('#weather')">
+      Weather
+    </button>
+    <button class="navbar-item button is-white is-medium" onclick="scrollToSection('#newsletter')">
+      Newsletter
+    </button> -->
+</div>
 
 <div class="column is-full" id="masthead">
-  <img src="assets/breaking.gif" id="breaking">
-  <img src="assets/world News.png">
+ 
+  <img src="assets/world News.png"></image>
 
-  <button class="button is-danger" id="cta-button">Subscribe</button>
+  <h1 id="cta-text">Subscribe Today!</h1>
+  <button class="button is-danger" id="cta-button">Join!</button>
   
 </div>
 
-<div class="column is-full" id="nav-bar">
+  <div class="column is-full" id="nav-bar">
 
-  <button class="button is-white is-large" id="nav-button" onclick="scrollToSection('#headlines')">
-    Headlines
-  </button>
-  <button class="button is-white is-large" id="nav-button" onclick="scrollToSection('#weather')">
-    Weather
-  </button>
-  <button class="button is-white is-large" id="nav-button" onclick="scrollToSection('#newsletter')">
-    Newsletter
-  </button>
-    
-  </div>
-</nav>
-<!-- Garrett's Section -->
-<section id="#headlines" class="headlines has-border">
-    
-<section class="hero is-small is-primary">
-  <div class="hero-body">
-    <button class="button is-rounded" id="business">Business</button>
-    <button class="button is-rounded" id="entertainment">Entertainment</button>
-    <button class="button is-rounded" id="general">General</button>
-    <button class="button is-rounded" id="health">Health</button>
-    <button class="button is-rounded" id="science">Science</button>
-    <button class="button is-rounded" id="sports">Sports</button>
-    <button class="button is-rounded" id="tech">Tech</button>
-  </div>
-</section>
+    <button class="button is-white is-large" id="nav-button" onclick="scrollToSection('#headlines')">
+      Headlines
+    </button>
+    <button class="button is-white is-large" id="nav-button" onclick="scrollToSection('#weather')">
+      Weather
+    </button>
+    <button class="button is-white is-large" id="nav-button" onclick="scrollToSection('#newsletter')">
+      Newsletter
+    </button>
 
-<div class="tile is-ancestor">
+  </div>
+  </nav>
+  <!-- Garrett's Section -->
+  <section id="#headlines" class="headlines has-border">
 
-<!-- 🔥🔥🔥 TILE 1 🔥🔥🔥  -->
-  <div class="tile is-parent" id="story1-div">
-    <article class="tile is-child box">
-      <div id="image-display"></div>
-      <h1 id="title"></h1>
-      <h4 id="author"></h4>
-      <p id="summary"></p>
-      
-    </article>
-  </div>
-  
-<!-- 🔥🔥🔥 TILE 2 🔥🔥🔥  -->
-  <div class="tile is-parent" id="story2-div">
-    <article class="tile is-child box">
-      <div id="image-display2"></div>
-      <h1 id="title2"></h1>
-      <h4 id="author2"></h4>
-      <p id="summary2"></p>
-      
-    </article>
-  </div>
-  
-<!-- 🔥🔥🔥 TILE 3 🔥🔥🔥  -->
-  <div class="tile is-parent" id="story3-div">
-    <article class="tile is-child box">
-      <div id="image-display3"></div>
-      <h1 id="title3"></h1>
-      <h4 id="author3"></h4>
-      <p id="summary3"></p>
-      
-    </article>
+    <section class="hero is-small is-primary">
+      <div class="hero-body">
+        <button class="button is-rounded" id="business">Business</button>
+        <button class="button is-rounded" id="entertainment">Entertainment</button>
+        <button class="button is-rounded" id="general">General</button>
+        <button class="button is-rounded" id="health">Health</button>
+        <button class="button is-rounded" id="science">Science</button>
+        <button class="button is-rounded" id="sports">Sports</button>
+        <button class="button is-rounded" id="tech">Tech</button>
+      </div>
+    </section>
+
+    <div class="tile is-ancestor">
+
+      <!-- 🔥🔥🔥 TILE 1 🔥🔥🔥  -->
+      <div class="tile is-parent" id="story1-div">
+        <article class="tile is-child box">
+          <div id="image-display"></div>
+          <h1 id="title"></h1>
+          <h4 id="author"></h4>
+          <p id="summary"></p>
+
+        </article>
+      </div>
+
+      <!-- 🔥🔥🔥 TILE 2 🔥🔥🔥  -->
+      <div class="tile is-parent" id="story2-div">
+        <article class="tile is-child box">
+          <div id="image-display2"></div>
+          <h1 id="title2"></h1>
+          <h4 id="author2"></h4>
+          <p id="summary2"></p>
+
+        </article>
+      </div>
+
+      <!-- 🔥🔥🔥 TILE 3 🔥🔥🔥  -->
+      <div class="tile is-parent" id="story3-div">
+        <article class="tile is-child box">
+          <div id="image-display3"></div>
+          <h1 id="title3"></h1>
+          <h4 id="author3"></h4>
+          <p id="summary3"></p>
+
+        </article>
+      </div>
+
+      <!-- 🔥🔥🔥 TILE 4 🔥🔥🔥  -->
+      <div class="tile is-parent" id="story4-div">
+        <article class="tile is-child box">
+          <div id="image-display4"></div>
+          <h1 id="title4"></h1>
+          <h4 id="author4"></h4>
+          <p id="summary4"></p>
+
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="readmorecontainer">
+    <div class="column is-one-quarter">
+      <button class="button is-primary" id="btn1">Read more</button>
+    </div>
+    <div class="column is-one-quarter">
+      <button class="button is-primary" id="btn2">Read more</button>
+    </div>
+    <div class="column is-one-quarter">
+      <button class="button is-primary" id="btn3">Read more</button>
+    </div>
+    <div class="column is-one-quarter">
+      <button class="button is-primary" id="btn4">Read more</button>
+    </div>
   </div>
 
-<!-- 🔥🔥🔥 TILE 4 🔥🔥🔥  -->
-  <div class="tile is-parent" id="story4-div">
-    <article class="tile is-child box">
-      <div id="image-display4"></div>
-      <h1 id="title4"></h1>
-      <h4 id="author4"></h4>
-      <p id="summary4"></p>
-     
-    </article>
-  </div>
-</div>
-</section>
+  <!-- Jasmin's Section -->
+  <div class="col" id="NewYork">
+    <button class="button is-primary is-light" id="NYC">New York</button>
 
-<div class="readmorecontainer">
-  <div class="column is-one-quarter">
-    <button class="button is-primary" id="btn1">Read more</button>
-  </div>
-  <div class="column is-one-quarter">
-    <button class="button is-primary" id="btn2">Read more</button>
-  </div>
-  <div class="column is-one-quarter">
-    <button class="button is-primary" id="btn3">Read more</button>
-  </div>
-  <div class="column is-one-quarter">
-    <button class="button is-primary" id="btn4">Read more</button></div>
-</div>
+    <div class="card" id="D1">
+      <div class="card-content">
+        <div class="content">
+          <h id="name"></h>
+          <p id="temp"></p>
+          <p id="Forecast"></p>
+        </div>
+      </div>
+    </div>
+    <!--DAY2-->
+    <div class="card">
+      <div class="card-content">
+        <div class="content">
+          <h id="name2"></h>
+          <p id="temp2"></p>
+          <p id="Forecast2"></p>
+        </div>
+      </div>
+    </div>
+    <!--DAY3-->
+    <div class="card">
+      <div class="card-content">
+        <div class="content">
+          <h id="name3"></h>
+          <p id="temp3"></p>
+          <p id="Forecast3"></p>
+        </div>
+      </div>
+    </div>
 
-<!-- Jasmin's Section -->
-<div class="weather">
-<section id="#weather" class="weather has-border">
+    <!--DAY4-->
 
-</section>
-</div>
+    <div class="card">
+      <div class="card-content">
+        <div class="content">
+          <h id="name4"></h>
+          <p id="temp4"></p>
+          <p id="Forecast4"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- Kyle's section -->
-<section id="newsletter" class="newsletter has-border">
+<section id="#newsletter" class="newsletter has-border">
 
     <div class="container">
       <h1 class="title has-text-centered">Newsletter Signup</h1>
@@ -133,7 +191,8 @@
 
             <div class="field">
               <p class="control has-icons-left has-icons-right">
-                <input class="input is-rounded" input type="text" name="fname" id="fname" placeholder="First Name" required>
+                <input class="input is-rounded" input type="text" name="fname" id="fname" placeholder="First Name"
+                  required>
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -145,7 +204,8 @@
 
             <div class="field">
               <p class="control has-icons-left has-icons-right">
-                <input class="input is-rounded" input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                <input class="input is-rounded" input type="text" name="lname" id="lname" placeholder="Last Name"
+                  required>
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -157,7 +217,8 @@
 
             <div class="field">
               <p class="control has-icons-left has-icons-right">
-                <input class="input is-rounded" input type="email" name="email" id="email" placeholder="Email Address" required>
+                <input class="input is-rounded" input type="email" name="email" id="email" placeholder="Email Address"
+                  required>
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -169,7 +230,8 @@
 
             <div class="field">
               <p class="control has-icons-left">
-                <input class="input is-rounded" input type="password" name="pwd" id="pwd" placeholder="Password" required>
+                <input class="input is-rounded" input type="password" name="pwd" id="pwd" placeholder="Password"
+                  required>
                 <span class="icon is-small is-left">
                   <i class="fas fa-lock"></i>
                 </span>
@@ -196,15 +258,16 @@
       </div>
     </div>
   </section>
-</div>
+  </div>
 
-<!-- Footer Element to be Added -->
-<footer class="footer">
+  <!-- Footer Element to be Added -->
+  <footer class="footer">
     <div class="content has-text-centered">
       <p>&copy; 2023 Team Project 1.</p>
     </div>
-</footer>
-    
-<script src="assets/script.js"></script>
+  </footer>
+
+  <script src="assets/script.js"></script>
 </body>
+
 </html>
