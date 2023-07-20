@@ -4,15 +4,15 @@
 ## Objective
 Create a sleek and straightforward news app, providing users with headlines, weather forecasts, and an opportunity to sign-up for a newsletter.
 
-# Audience
+## Audience
 Casual news consumers looking for today's top headlines and local weather.
 
-# User Story
+## User Story
 As a news reader, I want a resource for headlines and weather.
 As a news reader, I want filter options for headline topics and local weather.
 As a news reader, I want to sign up for a newsletter, so that more top stories are delivered to my inbox. 
 
-# Acceptance Criteria
+## Acceptance Criteria
 WHEN I open the website
 THEN nav bar will provide one click access to each section of the website
 
@@ -43,7 +43,7 @@ In assembling this project we used two free, open access API's.
     
     - National Weather Service API: https://www.weather.gov/documentation/services-web-api
 
-# CSS Framework + Style 
+## CSS Framework + Style 
     - For styling and layout, we utilized Bulma (bulma.io) for elements, components, and forms. We utilized Bulma columns throughout the site to provide dynamic layout.   
 
     - Additional icon and banner png and gif files were created using Canva.com
@@ -53,16 +53,16 @@ In assembling this project we used two free, open access API's.
 
 The team divided the project by website section (headlines, weather, newsletter), and segmented the site into flexible, Bulma containers of 100% width to help assure our respective work did not crowd into or create errors in other sections.
 
-# Functionality Demos
+## Functionality Demos
 
-## Headlines
+### Headlines
 ![Headlines Demo](assets/Headlines_demo.gif)
 
-## Weather Display
+### Weather Display
 ![Weather Demo](assets/weather_demo.gif)
 
-## Form Inputs
+### Form Inputs
 ![Form Demo 1](assets/form_demo_1.gif)
 ![Form Demo 2](assets/form_demo_2.gif)
 
-## Live Link 
+### Live Link 
