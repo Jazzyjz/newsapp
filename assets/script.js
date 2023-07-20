@@ -1,7 +1,7 @@
 
 // 🔥🔥🔥HEADER🔥🔥🔥
 let ctaButton = document.querySelector('#cta-button');
-let newsLetterDiv = document.querySelector('#newsletter');
+let newsLetterDiv = document.querySelector('.footer');
 
 ctaButton.addEventListener('click', function() {
     newsLetterDiv.scrollIntoView();
