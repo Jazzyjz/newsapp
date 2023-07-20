@@ -66,3 +66,4 @@ The team divided the project by website section (headlines, weather, newsletter)
 ![Form Demo 2](assets/form_demo_2.gif)
 
 ### Live Link 
+https://garrettswink.github.io/newsapp/
