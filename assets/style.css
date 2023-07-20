@@ -1,35 +1,39 @@
 
 img {
     width: 250px;
+    margin-bottom: 50px;
+    
 }
 
-#cta-text {
-    margin-top: 70px;
-    margin-left: 80%;
+#breaking {
+    width: 700px;
+    margin-left: 25%;
 }
 
 #cta-button {
-    margin-top: 140px;
-    margin-left: -5%;
+    margin-top: 100px;
+    margin-left: 27%;
 }
 
 #masthead {
     background-color: white;
     display: flex;
     font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: -50px;
 }
 
 #nav-bar {
     display: flex;
     margin-top: 1px;
     height: 75px;
-    margin-left: 600px;
+    margin-left: 20%;
 
 }
 
 #nav-button {
     margin-top: 0px;
-    margin-left: 7%;
+    margin-left: 10%;
     margin-bottom: 1px;
 }
 

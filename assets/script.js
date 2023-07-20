@@ -1,7 +1,7 @@
 
 // 🔥🔥🔥HEADER🔥🔥🔥
 let ctaButton = document.querySelector('#cta-button');
-let newsLetterDiv = document.querySelector('#newsletter');
+let newsLetterDiv = document.querySelector('.footer');
 
 ctaButton.addEventListener('click', function() {
     newsLetterDiv.scrollIntoView();
@@ -69,7 +69,7 @@ let btns = [btn1, btn2, btn3, btn4];
 let imgs = [img, img2, img3, img4];
 
 
-// 🔥🔥🔥 DEFAULT NEWS FUNCTION 🔥🔥🔥
+// 🔥🔥🔥 NEWS FUNCTION 🔥🔥🔥
 function fetchNews(url) {
     fetch(url)
         .then(function (response) {
